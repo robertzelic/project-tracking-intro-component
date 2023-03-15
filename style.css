@@ -21,6 +21,18 @@ body {
   color: var(--very-darkblue);
 }
 
+body::before {
+  content: '';
+  background-color: var(--light-grayish-blue);
+  position: absolute;
+  inline-size: 50%;
+  block-size: 26rem;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  border-end-start-radius: 3rem;
+}
+
 h1,
 nav,
 .dashboard-text,
@@ -55,17 +67,6 @@ button {
   background-color: transparent;
   outline: none;
   cursor: pointer;
-}
-
-.background {
-  background-color: var(--light-grayish-blue);
-  position: absolute;
-  inline-size: 50%;
-  block-size: 26rem;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  border-end-start-radius: 3rem;
 }
 
 .container {
